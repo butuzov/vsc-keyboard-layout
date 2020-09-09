@@ -1,0 +1,49 @@
+Add_Cursor:
+  alt+cmd+e: to line ends
+  alt+cmd+l: to search results
+  alt+cmd+updown: up or down
+
+Editing_Content:
+  alt+cmd+s: Save All
+  alt+m: 'Markdown: Preview'
+  alt+updown: Move Select. Up/Down
+  cmd+/: Toggle comment
+  cmd+[: Dedent lines
+  cmd+]: Outdent lines
+  cmd+r: Run Code
+  ctrl+alt+updown: Page Up/Down
+  shift+alt+updown: Copy Select. Up/Down
+  shift+ctrl+alt+updown: Select Page Up/Down
+  shift+ctrl+updown: Smart Selection
+
+Editor:
+  alt+cmd+left: Switch to File1
+  cmd+b: Split Editor
+  ctrl+cmd+rightleft: Move File to Editor
+
+Refactoring_Code:
+  cmd+.: Fix problem
+  ctrl+alt+s: Rename symbol
+  shift+alt+d: Peek Definition
+  shift+alt+r: Refactor
+  shift+enter: Refactor Preview
+
+Search:
+  cmd+f: Search in document
+  ctrl+cmd+updown: Find Occur. Up/Down
+  ctrl+g: Go To Line/Column
+  shift+cmd+f: Search in workspace
+
+User_Interface:
+  alt+cmd+o: 'Panel: Outputs'
+  alt+cmd+p: 'Panel: Problems'
+  alt+cmd+s: 'Panel: Search'
+  alt+cmd+t: 'Panel: Terminal'
+  alt+tab: Select Window
+  cmd+\: Zen Mode
+  cmd+down: Toggle Panel Down
+  cmd+left: Toggle Sidebar
+  cmd+right: Toggle Panel Right
+  ctrl+`: Switch Window
+  ctrl+cmd+rightleft: Resize Terminal Panel
+  ctrl+tab: Select Editor
