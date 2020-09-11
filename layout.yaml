@@ -34,6 +34,14 @@ Search:
   ctrl+g: Go To Line/Column
   shift+cmd+f: Search in workspace
 
+Debug:
+  ctrl+shift+enter : Stop/Start
+  ctrl+shift+space: Breakpoint
+  ctrl+shift+down: Pause/Continue
+  ctrl+shift+up: stepOver
+  ctrl+shift+left: stepOut
+  ctrl+shift+right: stepIn
+
 User_Interface:
   alt+cmd+o: 'Panel: Outputs'
   alt+cmd+p: 'Panel: Problems'

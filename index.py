@@ -80,10 +80,11 @@ def wrap(string):
 
         n = n.replace("cmd", "<kbd>⌘</kbd>")
         n = n.replace("alt", "<kbd>⌥</kbd>")
-        n = n.replace("shift", "<kbd>Shift</kbd>")
-        n = n.replace("ctrl", "<kbd>Ctrl</kbd>")
+        n = n.replace("shift", "<kbd>⇧</kbd>")
+        n = n.replace("ctrl", "<kbd>⌃</kbd>")
         n = n.replace("tab", "<kbd>Tab</kbd>")
         n = n.replace("enter", "<kbd>↩</kbd>")
+        n = n.replace("space", "<kbd>␣</kbd>")
 
         n = n.replace("updown", "<kbd>↕</kbd>")
         n = n.replace("downup", "<kbd>↕</kbd>")
