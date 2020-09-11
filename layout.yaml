@@ -20,6 +20,8 @@ Editor:
   alt+cmd+left: Switch to File1
   cmd+b: Split Editor
   ctrl+cmd+rightleft: Move File to Editor
+  ctrl+>: Go Next (cursor)
+  ctrl+<: Go Prev (cursor)
 
 Refactoring_Code:
   cmd+.: Fix problem
@@ -29,15 +31,16 @@ Refactoring_Code:
   shift+enter: Refactor Preview
 
 Search:
-  cmd+f: Search in document
-  ctrl+cmd+updown: Find Occur. Up/Down
+  cmd+f: Search in Code
+  cmd+g: Find Next
+  shift+cmd+g: Find Prev
   ctrl+g: Go To Line/Column
-  shift+cmd+f: Search in workspace
+  shift+cmd+f: Search everywhere
 
 Debug:
-  ctrl+shift+enter : Stop/Start
-  ctrl+shift+space: Breakpoint
-  ctrl+shift+down: Pause/Continue
+  ctrl+shift+enter : Toggle Debug
+  ctrl+shift+space: Toggle Breakpoint
+  ctrl+shift+down: Toggle Debug Run
   ctrl+shift+up: stepOver
   ctrl+shift+left: stepOut
   ctrl+shift+right: stepIn
