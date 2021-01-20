@@ -25,7 +25,7 @@ Editor:
 
 Refactoring_Code:
   cmd+.: Fix problem
-  ctrl+alt+s: Rename symbol
+  ctrl+shift+s: Rename symbol
   shift+alt+d: Peek Definition
   shift+alt+r: Refactor
   shift+enter: Refactor Preview
@@ -58,3 +58,6 @@ User_Interface:
   ctrl+`: Switch Window
   ctrl+cmd+rightleft: Resize Terminal Panel
   ctrl+tab: Select Editor
+  shift+cmd+b: Run User Tasks
+  ctrl+shift+cmd+t: Toggle Editor Size
+  ctrl+shift+cmd+r: Resize Editor Groups

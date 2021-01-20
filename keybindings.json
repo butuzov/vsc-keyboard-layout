@@ -378,5 +378,21 @@
     {
         "key": "ctrl+shift+-",
         "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "ctrl+alt+cmd+r",
+        "command": "workbench.action.evenEditorWidths"
+    },
+    {
+        "key": "ctrl+alt+cmd+t",
+        "command": "workbench.action.toggleEditorWidths"
     }
 ]
