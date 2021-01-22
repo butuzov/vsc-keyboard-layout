@@ -14,8 +14,8 @@ open index.html
 * `index.html` - example of output
 * `template.html` - html template
 * `index.py` - page geenrator
-* `keybindings.json` - my current keybindings
-* `layout.yaml` - shortcuts source
+* latest [`keybindings.json`](https://gist.github.com/butuzov/730d3923ee8a43a8c99518295d4eb079#file-keybindingsmac-json)
+* `keybindings.yaml` - shortcuts source
 
 
 ### VSCode Context(s)
