@@ -12,8 +12,8 @@ User_Interface:
   ctrl+cmd+rightleft: Resize Terminal Panel
   ctrl+tab: Select Editor
   shift+cmd+b: Run User Tasks
-  ctrl+shift+cmd+t: Toggle Editor Size
-  ctrl+shift+cmd+r: Resize Editor Groups
+  ctrl+alt+cmd+/: Toggle Editor Group Sizes
+  ctrl+alt+cmd+r: Reset Editor Group Sizes
 
 Editor:
   alt+cmd+left: Switch to File1
