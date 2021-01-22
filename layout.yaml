@@ -1,7 +1,50 @@
+User_Interface:
+  alt+cmd+p: 'Panel: Problems'
+  alt+cmd+o: 'Panel: Outputs'
+  alt+cmd+s: 'Panel: Search'
+  alt+cmd+t: 'Panel: Terminal'
+  alt+tab: Select Window
+  cmd+\: Zen Mode
+  cmd+down: Toggle Panel Down
+  cmd+left: Toggle Sidebar
+  cmd+right: Toggle Panel Right
+  ctrl+`: Switch Window
+  ctrl+cmd+rightleft: Resize Terminal Panel
+  ctrl+tab: Select Editor
+  shift+cmd+b: Run User Tasks
+  ctrl+shift+cmd+t: Toggle Editor Size
+  ctrl+shift+cmd+r: Resize Editor Groups
+
+Editor:
+  alt+cmd+left: Switch to File1
+  cmd+b: Split Editor
+  ctrl+cmd+rightleft: Move File to Editor
+  ctrl+>: Go Next (cursor)
+  ctrl+<: Go Prev (cursor)
+
+Search:
+  cmd+f: Search in Code
+  cmd+g: Find Next
+  shift+cmd+g: Find Prev
+  ctrl+g: Go To Line/Column
+  shift+cmd+f: Search everywhere
+
+VSCode:
+  cmd+,: Toggle Settings (json/ui)
+  cmd+k: Toggle Shortcuts (json/ui)
+
 Add_Cursor:
   alt+cmd+e: to line ends
   alt+cmd+l: to search results
   alt+cmd+updown: up or down
+
+Debug:
+  ctrl+shift+enter : Toggle Debug
+  ctrl+shift+space: Toggle Breakpoint
+  ctrl+shift+down: Toggle Debug Run
+  ctrl+shift+up: stepOver
+  ctrl+shift+left: stepOut
+  ctrl+shift+right: stepIn
 
 Editing_Content:
   alt+cmd+s: Save All
@@ -16,12 +59,6 @@ Editing_Content:
   shift+ctrl+alt+updown: Select Page Up/Down
   shift+ctrl+updown: Smart Selection
 
-Editor:
-  alt+cmd+left: Switch to File1
-  cmd+b: Split Editor
-  ctrl+cmd+rightleft: Move File to Editor
-  ctrl+>: Go Next (cursor)
-  ctrl+<: Go Prev (cursor)
 
 Refactoring_Code:
   cmd+.: Fix problem
@@ -30,34 +67,4 @@ Refactoring_Code:
   shift+alt+r: Refactor
   shift+enter: Refactor Preview
 
-Search:
-  cmd+f: Search in Code
-  cmd+g: Find Next
-  shift+cmd+g: Find Prev
-  ctrl+g: Go To Line/Column
-  shift+cmd+f: Search everywhere
 
-Debug:
-  ctrl+shift+enter : Toggle Debug
-  ctrl+shift+space: Toggle Breakpoint
-  ctrl+shift+down: Toggle Debug Run
-  ctrl+shift+up: stepOver
-  ctrl+shift+left: stepOut
-  ctrl+shift+right: stepIn
-
-User_Interface:
-  alt+cmd+o: 'Panel: Outputs'
-  alt+cmd+p: 'Panel: Problems'
-  alt+cmd+s: 'Panel: Search'
-  alt+cmd+t: 'Panel: Terminal'
-  alt+tab: Select Window
-  cmd+\: Zen Mode
-  cmd+down: Toggle Panel Down
-  cmd+left: Toggle Sidebar
-  cmd+right: Toggle Panel Right
-  ctrl+`: Switch Window
-  ctrl+cmd+rightleft: Resize Terminal Panel
-  ctrl+tab: Select Editor
-  shift+cmd+b: Run User Tasks
-  ctrl+shift+cmd+t: Toggle Editor Size
-  ctrl+shift+cmd+r: Resize Editor Groups

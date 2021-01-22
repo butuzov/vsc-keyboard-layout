@@ -1,39 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-
-<!-- HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5/distr/fira_code.css">
-
-	<!-- Bootstrap core CSS -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script>
+	window.addEventListener('load', function(){
+		var msnry = new Masonry( '.grid', { itemSelector: ".grid-item" })
+	})
+	</script>
 
 	<style>
+	.grid { width:1200px; height:900px; }
+	.grid-item { width: 33%; }
 
-		html {
-			font-size: 14px;
-			font-family:"Fira Code", "Fira Code Symbol";
-			font-variant-ligatures: normal;
+	kbd {
+		padding:2px 4px;
+		font-family:"fira code", "Fira Code Symbol";
+		background:none;
+		color: #000;
+	}
 
-		}
-
-
-		kbd {
-			padding:2px 4px;
-			font-family:"fira code", "Fira Code Symbol";
-			background:none;
-			color: #000;
-		}
-
-
-
-		/* kbd:not(:last-child):after {
-			content: " +"
-		} */
-
-		ol li {
+	ol li {
 			/* background:#ff0; */
 			list-style:none;
 			margin:0 0 15px 0;
@@ -46,15 +34,12 @@
 			/* background:#f0f; */
 			padding:0;
 			margin:0;
-			width:40%;
+			width:75px;
 			text-align:right;
 			white-space: nowrap;
 		}
 
-		div#d2 ol li p.kbd ,
-		div#d3 ol li p.kbd  {
-			width:35%;
-		}
+
 
 		ol li p.kbd span {
 			border:1px solid #000;
@@ -82,34 +67,13 @@
 
 
 
-
 	</style>
-	<!-- Custom styles for this template -->
 </head>
 <body>
 
-<div class="container">
-	<div style="width:40%;" id="d1">
-		<ol>
-			<!-- _editing_content --><!-- /_editing_content -->
-			<!-- _editor --><!-- /_editor -->
-		</ol>
-	</div>
-	<div id="d2" style="width:30%;">
-		<ol>
-			<!-- _add_cursor --><!-- /_add_cursor -->
-			<!-- _refactoring_code --><!-- /_refactoring_code -->
-			<!-- _debug --><!-- /_debug -->
-		</ol>
-	</div>
-	<div id="d3" style="width:30%;">
-		<ol>
-			<!-- _user_interface --><!-- /_user_interface -->
-			<!-- _search --><!-- /_search -->
-		</ol>
-	</div>
-</tr>
-</table>
+<div class="grid">
+  <!--content/-->
+
 </div>
+
 </body>
-</html>

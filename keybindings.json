@@ -394,5 +394,29 @@
     {
         "key": "ctrl+alt+cmd+t",
         "command": "workbench.action.toggleEditorWidths"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.openSettings2",
+        "when": "!inSettingsEditor"
+    },
+    {
+        "key": "cmd+,",
+        "command": "workbench.action.openSettingsJson",
+        "when": "inSettingsEditor"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.openGlobalKeybindings",
+        "when": "!inKeybindings && !terminalFocus"
+    },
+    {
+        "key": "cmd+k cmd+s",
+        "command": "-workbench.action.openGlobalKeybindings",
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.openGlobalKeybindingsFile",
+        "when": "inKeybindings && !terminalFocus"
     }
 ]

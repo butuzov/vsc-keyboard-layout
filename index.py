@@ -2,6 +2,7 @@
 
 import re, yaml
 from typing import Dict
+import random
 
 
 def wrap(string):
@@ -37,29 +38,32 @@ def wrap(string):
 
 def toTable(name, data):
 
-    ret = f"\t\t<li class=\"wide\"><h4>{name}</h4></li>\n"
-
+    ret = f"\t\t<h4>{name}</h4>\n"
+    ret += f"<ol>\n"
     for k, v in data.items():
         ret += f"\t\t<li><p class=\"kbd\"><span>{wrap(k)}</span></p><p class=\"descr\">{v}</p></li>\n"
 
-    return ret
+    ret += f"</ol>\n"
+    return "<div class='grid-item'>" + ret + "</div>"
 
 
 def main(file_name: str, shortcuts: Dict[str, str]):
+
+    keys = [(key, val) for key, val in shortcuts.items()]
+
+    # experiments with better (random) order
+    # random.shuffle(keys)
 
     data = ""
     with open("template.html", "r+") as f:
         data = f.read()
 
     with open(file_name, "w") as f:
-        for key in shortcuts:
-            pattern = re.compile(r"<!-- (_" + key.lower() +
-                                 r") -->(.*?)<!-- (/\1) -->")
-            data = pattern.sub(
-                f"<!-- {key.lower()} --> {toTable(key, shortcuts[key])}<!-- /{key.lower()} -->",
-                data)
-
-        f.write(data)
+        f.write(
+            data.replace(
+                '<!--content/-->',
+                "\n".join(toTable(item[0], item[1]) for item in keys),
+            ))
 
 
 if __name__ == "__main__":

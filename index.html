@@ -1,39 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-
-<!-- HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@5/distr/fira_code.css">
-
-	<!-- Bootstrap core CSS -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script>
+	window.addEventListener('load', function(){
+		var msnry = new Masonry( '.grid', { itemSelector: ".grid-item" })
+	})
+	</script>
 
 	<style>
+	.grid { width:1200px; height:900px; }
+	.grid-item { width: 33%; }
 
-		html {
-			font-size: 14px;
-			font-family:"Fira Code", "Fira Code Symbol";
-			font-variant-ligatures: normal;
+	kbd {
+		padding:2px 4px;
+		font-family:"fira code", "Fira Code Symbol";
+		background:none;
+		color: #000;
+	}
 
-		}
-
-
-		kbd {
-			padding:2px 4px;
-			font-family:"fira code", "Fira Code Symbol";
-			background:none;
-			color: #000;
-		}
-
-
-
-		/* kbd:not(:last-child):after {
-			content: " +"
-		} */
-
-		ol li {
+	ol li {
 			/* background:#ff0; */
 			list-style:none;
 			margin:0 0 15px 0;
@@ -46,15 +34,12 @@
 			/* background:#f0f; */
 			padding:0;
 			margin:0;
-			width:40%;
+			width:75px;
 			text-align:right;
 			white-space: nowrap;
 		}
 
-		div#d2 ol li p.kbd ,
-		div#d3 ol li p.kbd  {
-			width:35%;
-		}
+
 
 		ol li p.kbd span {
 			border:1px solid #000;
@@ -82,66 +67,15 @@
 
 
 
-
 	</style>
-	<!-- Custom styles for this template -->
 </head>
 <body>
 
-<div class="container">
-	<div style="width:40%;" id="d1">
-		<ol>
-			<!-- editing_content --> 		<li class="wide"><h4>Editing_Content</h4></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>S</kbd></span></p><p class="descr">Save All</p></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>M</kbd></span></p><p class="descr">Markdown: Preview</p></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Move Select. Up/Down</p></li>
-		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>/</kbd></span></p><p class="descr">Toggle comment</p></li>
-		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>[</kbd></span></p><p class="descr">Dedent lines</p></li>
-		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>]</kbd></span></p><p class="descr">Outdent lines</p></li>
-		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>R</kbd></span></p><p class="descr">Run Code</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Page Up/Down</p></li>
-		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Copy Select. Up/Down</p></li>
-		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌃</kbd><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Select Page Up/Down</p></li>
-		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌃</kbd><kbd>↕</kbd></span></p><p class="descr">Smart Selection</p></li>
-<!-- /editing_content -->
-			<!-- editor --> 		<li class="wide"><h4>Editor</h4></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd></span></p><p class="descr">Switch to File1</p></li>
-		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>B</kbd></span></p><p class="descr">Split Editor</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⌘</kbd><kbd>↔</kbd></span></p><p class="descr">Move File to Editor</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>></kbd></span></p><p class="descr">Go Next (cursor)</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd><</kbd></span></p><p class="descr">Go Prev (cursor)</p></li>
-<!-- /editor -->
-		</ol>
-	</div>
-	<div id="d2" style="width:30%;">
-		<ol>
-			<!-- add_cursor --> 		<li class="wide"><h4>Add_Cursor</h4></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>E</kbd></span></p><p class="descr">to line ends</p></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>L</kbd></span></p><p class="descr">to search results</p></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>↕</kbd></span></p><p class="descr">up or down</p></li>
-<!-- /add_cursor -->
-			<!-- refactoring_code --> 		<li class="wide"><h4>Refactoring_Code</h4></li>
-		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>.</kbd></span></p><p class="descr">Fix problem</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>S</kbd></span></p><p class="descr">Rename symbol</p></li>
-		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌥</kbd><kbd>D</kbd></span></p><p class="descr">Peek Definition</p></li>
-		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌥</kbd><kbd>R</kbd></span></p><p class="descr">Refactor</p></li>
-		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>↩</kbd></span></p><p class="descr">Refactor Preview</p></li>
-<!-- /refactoring_code -->
-			<!-- debug --> 		<li class="wide"><h4>Debug</h4></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>↩</kbd></span></p><p class="descr">Toggle Debug</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>␣</kbd></span></p><p class="descr">Toggle Breakpoint</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>↓</kbd></span></p><p class="descr">Toggle Debug Run</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>↑</kbd></span></p><p class="descr">stepOver</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>←</kbd></span></p><p class="descr">stepOut</p></li>
-		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>→</kbd></span></p><p class="descr">stepIn</p></li>
-<!-- /debug -->
-		</ol>
-	</div>
-	<div id="d3" style="width:30%;">
-		<ol>
-			<!-- user_interface --> 		<li class="wide"><h4>User_Interface</h4></li>
-		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>O</kbd></span></p><p class="descr">Panel: Outputs</p></li>
+<div class="grid">
+  <div class='grid-item'>		<h4>User_Interface</h4>
+<ol>
 		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>P</kbd></span></p><p class="descr">Panel: Problems</p></li>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>O</kbd></span></p><p class="descr">Panel: Outputs</p></li>
 		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>S</kbd></span></p><p class="descr">Panel: Search</p></li>
 		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>T</kbd></span></p><p class="descr">Panel: Terminal</p></li>
 		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>Tab</kbd></span></p><p class="descr">Select Window</p></li>
@@ -155,18 +89,74 @@
 		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌘</kbd><kbd>B</kbd></span></p><p class="descr">Run User Tasks</p></li>
 		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>T</kbd></span></p><p class="descr">Toggle Editor Size</p></li>
 		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>⌘</kbd><kbd>R</kbd></span></p><p class="descr">Resize Editor Groups</p></li>
-<!-- /user_interface -->
-			<!-- search --> 		<li class="wide"><h4>Search</h4></li>
+</ol>
+</div>
+<div class='grid-item'>		<h4>Editor</h4>
+<ol>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>←</kbd></span></p><p class="descr">Switch to File1</p></li>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>B</kbd></span></p><p class="descr">Split Editor</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⌘</kbd><kbd>↔</kbd></span></p><p class="descr">Move File to Editor</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>></kbd></span></p><p class="descr">Go Next (cursor)</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd><</kbd></span></p><p class="descr">Go Prev (cursor)</p></li>
+</ol>
+</div>
+<div class='grid-item'>		<h4>Search</h4>
+<ol>
 		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>F</kbd></span></p><p class="descr">Search in Code</p></li>
 		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>G</kbd></span></p><p class="descr">Find Next</p></li>
 		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌘</kbd><kbd>G</kbd></span></p><p class="descr">Find Prev</p></li>
 		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>G</kbd></span></p><p class="descr">Go To Line/Column</p></li>
 		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌘</kbd><kbd>F</kbd></span></p><p class="descr">Search everywhere</p></li>
-<!-- /search -->
-		</ol>
-	</div>
-</tr>
-</table>
+</ol>
 </div>
+<div class='grid-item'>		<h4>VSCode</h4>
+<ol>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>,</kbd></span></p><p class="descr">Toggle Settings (json/ui)</p></li>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>K</kbd></span></p><p class="descr">Toggle Shortcuts (json/ui)</p></li>
+</ol>
+</div>
+<div class='grid-item'>		<h4>Add_Cursor</h4>
+<ol>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>E</kbd></span></p><p class="descr">to line ends</p></li>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>L</kbd></span></p><p class="descr">to search results</p></li>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>↕</kbd></span></p><p class="descr">up or down</p></li>
+</ol>
+</div>
+<div class='grid-item'>		<h4>Debug</h4>
+<ol>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>↩</kbd></span></p><p class="descr">Toggle Debug</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>␣</kbd></span></p><p class="descr">Toggle Breakpoint</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>↓</kbd></span></p><p class="descr">Toggle Debug Run</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>↑</kbd></span></p><p class="descr">stepOver</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>←</kbd></span></p><p class="descr">stepOut</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>→</kbd></span></p><p class="descr">stepIn</p></li>
+</ol>
+</div>
+<div class='grid-item'>		<h4>Editing_Content</h4>
+<ol>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>⌘</kbd><kbd>S</kbd></span></p><p class="descr">Save All</p></li>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>M</kbd></span></p><p class="descr">Markdown: Preview</p></li>
+		<li><p class="kbd"><span><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Move Select. Up/Down</p></li>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>/</kbd></span></p><p class="descr">Toggle comment</p></li>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>[</kbd></span></p><p class="descr">Dedent lines</p></li>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>]</kbd></span></p><p class="descr">Outdent lines</p></li>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>R</kbd></span></p><p class="descr">Run Code</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Page Up/Down</p></li>
+		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Copy Select. Up/Down</p></li>
+		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌃</kbd><kbd>⌥</kbd><kbd>↕</kbd></span></p><p class="descr">Select Page Up/Down</p></li>
+		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌃</kbd><kbd>↕</kbd></span></p><p class="descr">Smart Selection</p></li>
+</ol>
+</div>
+<div class='grid-item'>		<h4>Refactoring_Code</h4>
+<ol>
+		<li><p class="kbd"><span><kbd>⌘</kbd><kbd>.</kbd></span></p><p class="descr">Fix problem</p></li>
+		<li><p class="kbd"><span><kbd>⌃</kbd><kbd>⇧</kbd><kbd>S</kbd></span></p><p class="descr">Rename symbol</p></li>
+		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌥</kbd><kbd>D</kbd></span></p><p class="descr">Peek Definition</p></li>
+		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>⌥</kbd><kbd>R</kbd></span></p><p class="descr">Refactor</p></li>
+		<li><p class="kbd"><span><kbd>⇧</kbd><kbd>↩</kbd></span></p><p class="descr">Refactor Preview</p></li>
+</ol>
+</div>
+
+</div>
+
 </body>
-</html>
