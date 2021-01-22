@@ -67,4 +67,4 @@ def main(file_name: str, shortcuts: Dict[str, str]):
 
 
 if __name__ == "__main__":
-    main('index.html', yaml.safe_load(open('layout.yaml')))
+    main('index.html', yaml.safe_load(open('keybindings.yaml')))
