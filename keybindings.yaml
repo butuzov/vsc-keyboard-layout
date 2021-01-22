@@ -35,7 +35,7 @@ VSCode:
 
 Add_Cursor:
   alt+cmd+e: to line ends
-  alt+cmd+l: to search results
+  shift+cmd+l: to search results
   alt+cmd+updown: up or down
 
 Debug:
