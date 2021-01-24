@@ -46,13 +46,26 @@ def toTable(name, data):
     ret += f"</ol>\n"
     return "<div class='grid-item'>" + ret + "</div>"
 
+order = [
+    'VSCode',
+    'Refactoring_Code',
+    'Search',
+    'Editor',
+    'Editing_Content',
+    'User_Interface',
+    'Debug',
+    'Add_Cursor',
+]
 
-def main(file_name: str, shortcuts: Dict[str, str]):
+def main(file_name: str, shortcuts_dict: Dict[str, str]):
 
-    keys = [(key, val) for key, val in shortcuts.items()]
+    shortcuts = [(key, val) for key, val in shortcuts_dict.items()]
 
     # experiments with better (random) order
-    # random.shuffle(keys)
+    # random.shuffle(shortcuts)
+    # [print(f"'{x[0]}',") for x in shortcuts]
+
+    shortcuts = sorted(shortcuts, key=lambda x:  order.index(x[0]))
 
     data = ""
     with open("template.html", "r+") as f:
@@ -62,7 +75,7 @@ def main(file_name: str, shortcuts: Dict[str, str]):
         f.write(
             data.replace(
                 '<!--content/-->',
-                "\n".join(toTable(item[0], item[1]) for item in keys),
+                "\n".join(toTable(item[0], item[1]) for item in shortcuts),
             ))
 
 
