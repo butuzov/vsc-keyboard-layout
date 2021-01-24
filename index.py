@@ -47,14 +47,14 @@ def toTable(name, data):
     return "<div class='grid-item'>" + ret + "</div>"
 
 order = [
-    'VSCode',
-    'Refactoring_Code',
     'Search',
-    'Editor',
     'Editing_Content',
+    'Editor',
     'User_Interface',
-    'Debug',
+    'Refactoring_Code',
     'Add_Cursor',
+    'Debug',
+    'VSCode',
 ]
 
 def main(file_name: str, shortcuts_dict: Dict[str, str]):
