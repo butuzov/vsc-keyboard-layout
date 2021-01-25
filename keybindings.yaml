@@ -19,8 +19,8 @@ Editor:
   alt+cmd+left: Switch to File1
   cmd+b: Split Editor
   ctrl+cmd+rightleft: Move File to Editor
-  ctrl+>: Go Next (cursor)
-  ctrl+<: Go Prev (cursor)
+  ctrl+alt+right: Go Next (cursor)
+  ctrl+alt+left: Go Prev (cursor)
 
 Search:
   cmd+f: Search in Code
@@ -32,6 +32,7 @@ Search:
 VSCode:
   cmd+,: Toggle Settings (json/ui)
   cmd+k: Toggle Shortcuts (json/ui)
+  alt+m: 'Markdown: Preview'
 
 Add_Cursor:
   alt+cmd+e: to line ends
@@ -48,14 +49,14 @@ Debug:
 
 Editing_Content:
   alt+cmd+s: Save All
-  alt+m: 'Markdown: Preview'
   alt+updown: Move Select. Up/Down
   cmd+/: Toggle comment
   cmd+[: Dedent lines
   cmd+]: Outdent lines
   cmd+r: Run Code
   ctrl+alt+updown: Page Up/Down
-  shift+alt+updown: Copy Select. Up/Down
+  shift+alt+updown: Copy Select Up/Down
+  shift+alt+leftright: Select Word Left/Right
   shift+ctrl+alt+updown: Select Page Up/Down
   shift+ctrl+updown: Smart Selection
 
