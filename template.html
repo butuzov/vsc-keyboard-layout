@@ -57,11 +57,21 @@
 		color: #000;
 	}
 
-	h4 {padding-left:40px;}
-
-	ol {
-		padding:0;
+	div.hint {padding:10px; display:flex; flex-direction: row; justify-content: center; }
+	div.hint kbd {
+		margin:10px;
+		display: flex-item;
 	}
+
+	div.hint kbd  span {
+		border:1px solid #000;
+		border-radius:3px;
+		display:inline-block;
+		padding:5px;
+	}
+
+	h4 {padding-left:40px;}
+	ol {padding:0;}
 
 	ol li {
 			/* background:#ff0; */
@@ -85,16 +95,17 @@
 
 		ol li p.kbd span {
 			border:1px solid #000;
+			border-radius:3px;
+
 			font-size:12px;
 			padding:4px;
-			border-radius:3px;
 		}
 		ol li p.descr {
 
-			  padding:0px;
-			  margin:0;
-				 margin-left:10px;
-			  white-space: nowrap;
+			padding:0px;
+			margin:0;
+			margin-left:10px;
+			white-space: nowrap;
 		}
 
 		ol li.wide { text-align:center; display:block;}
@@ -113,6 +124,12 @@
 </head>
 <body>
 <div id="wrap">
+	<div class="hint">
+		<kbd><span>⇧</span> - shift</kbd>
+		<kbd><span>⌃</span> - control</kbd>
+		<kbd><span>⌥</span> - alt</kbd>
+		<kbd><span>⌘</span> - command</kbd>
+	</div>
 	<div class="grid"><!--content/--></div>
 </div>
 

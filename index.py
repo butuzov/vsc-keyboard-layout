@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.11
 
 import re, yaml
 from typing import Dict
@@ -50,6 +50,7 @@ order = [
     'Search',
     'Editing_Content',
     'Editor',
+    "Selection",
     'User_Interface',
     'Refactoring_Code',
     'Add_Cursor',

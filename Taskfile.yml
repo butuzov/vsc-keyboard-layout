@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    method: timestamp
+    sources:
+    - keybindings.yaml
+    - template.html
+    cmds:
+    - ./index.py
+    # - open index.html
+

@@ -1,72 +1,73 @@
 User_Interface:
-  alt+cmd+p: 'Panel: Problems'
-  alt+cmd+o: 'Panel: Outputs'
-  alt+cmd+s: 'Panel: Search'
-  alt+cmd+t: 'Panel: Terminal'
+  # alt+cmd+p: 'Panel: Problems'
+  # alt+cmd+o: 'Panel: Outputs'
+  # alt+cmd+s: 'Panel: Search'
+  # alt+cmd+t: 'Panel: Terminal'
   alt+tab: Select Window
-  cmd+\: Zen Mode
-  cmd+down: Toggle Panel Down
+  # cmd+\: Zen Mode
   cmd+left: Toggle Sidebar
+  cmd+down: Toggle Panel Down
   cmd+right: Toggle Panel Right
-  ctrl+`: Switch Window
-  ctrl+cmd+rightleft: Resize Terminal Panel
-  ctrl+tab: Select Editor
-  shift+cmd+b: Run User Tasks
-  ctrl+alt+cmd+/: Toggle Editor Group Sizes
-  ctrl+alt+cmd+r: Reset Editor Group Sizes
+  # ctrl+`: Switch Window
+  # ctrl+cmd+rightleft: Move Editorto Another µGroup)
+  # ctrl+cmd+rightleft: Resize Terminal Panel
+
+# Debug:
+#   ctrl+shift+enter : Toggle Debug
+#   ctrl+shift+space: Toggle Breakpoint
+#   ctrl+shift+down: Toggle Debug Run
+#   ctrl+shift+up: stepOver
+#   ctrl+shift+left: stepOut
+#   ctrl+shift+right: stepIn
+
 
 Editor:
-  alt+cmd+left: Switch to File1
+  alt+cmd+ctrl+/: Toggle Editor Size
+  alt+cmd+ctrl+r: Reset Editor Group Sizes
   cmd+b: Split Editor
-  ctrl+cmd+rightleft: Move File to Editor
-  ctrl+alt+right: Go Next (cursor)
-  ctrl+alt+left: Go Prev (cursor)
+  ctrl+cmd+rightleft: Move File to the Editor Group
+  alt+cmd+rightleft: Prev/Next File
+  ctrl+alt+rightleft: Prev/Next (cursor)
+
+Editing_Content:
+  alt+updown: Move Up / Move Down
+  shift+alt+updown: Duplicate Up/Down
+  cmd+/: Toggle comment
+  cmd+[: Dedent lines
+  cmd+]: Outdent lines
+  ctrl+alt+updown: Page Up/Page Down
+  shift+cmd+l: Delete Line
+  shift+cmd+k: Delete Word
+  ctrl+\: Toggle Terminal
+
+Selection:
+  shift+cmd+updown: Select to Up/Down EOF
+  shift+cmd+rightleft: Select to Left/Right EOL
+  shift+alt+leftright: Select Word Left/Right
+  shift+ctrl+leftright: Smart Select
+
+
 
 Search:
   cmd+f: Search in Code
-  cmd+g: Find Next
-  shift+cmd+g: Find Prev
+  cmd+g: Find Next (Selection)
+  shift+cmd+g: Find Prev (Selection)
   ctrl+g: Go To Line/Column
   shift+cmd+f: Search everywhere
+  shift+cmd+m: Select All Matches
 
 VSCode:
   cmd+,: Toggle Settings (json/ui)
   cmd+k: Toggle Shortcuts (json/ui)
   alt+m: 'Markdown: Preview'
 
+
+
 Add_Cursor:
-  alt+cmd+e: to line ends
-  shift+cmd+l: to search results
-  alt+cmd+updown: up or down
-
-Debug:
-  ctrl+shift+enter : Toggle Debug
-  ctrl+shift+space: Toggle Breakpoint
-  ctrl+shift+down: Toggle Debug Run
-  ctrl+shift+up: stepOver
-  ctrl+shift+left: stepOut
-  ctrl+shift+right: stepIn
-
-Editing_Content:
-  alt+cmd+s: Save All
-  alt+updown: Move Select. Up/Down
-  cmd+/: Toggle comment
-  cmd+[: Dedent lines
-  cmd+]: Outdent lines
-  cmd+r: Run Code
-  ctrl+alt+updown: Page Up/Down
-  shift+alt+updown: Copy Select Up/Down
-  shift+alt+leftright: Select Word Left/Right
-  shift+ctrl+alt+updown: Select Page Up/Down
-  shift+ctrl+updown: Smart Selection
+  alt+cmd+e: (with in selection) to line ends
+  shift+alt+cmd+updown: up/down cursor
 
 
 Refactoring_Code:
   cmd+.: "Code Action: Fix"
-  ctrl+space: Suggest Completion
   ctrl+shift+s: Rename symbol
-  shift+alt+d: Peek Definition
-  shift+alt+r: Refactor
-  shift+enter: Refactor Preview
-
-
